@@ -30,7 +30,7 @@ const EventItem = (props): JSX.Element => {
                         <address>{formattedAddress}</address>
                     </div>
                     <div>
-                        <button><a href={exploreLink}>explore</a></button>
+                        <S.Button><a href={exploreLink}>explore</a></S.Button>
                     </div>
                 </div>
             </li>

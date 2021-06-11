@@ -2,6 +2,8 @@ import AddressIcon from '../icons/address-icon';
 import DateIcon from '../icons/date-icon';
 import LogisticsItem from './logistics-item';
 
+import * as S from './event-logistic.styles';
+
 function EventLogistics(props) {
     const { date, address, image, imageAlt } = props;
 
@@ -13,7 +15,7 @@ function EventLogistics(props) {
     const addressText = address.replace(', ', '\n');
 
     return (
-        <section>
+        <S.Logistics>
             <div>
                 <img src={`/${image}`} alt={imageAlt} />
             </div>
@@ -25,7 +27,7 @@ function EventLogistics(props) {
                     <address>{addressText}</address>
                 </LogisticsItem>
             </ul>
-        </section>
+        </S.Logistics>
     );
 }
 

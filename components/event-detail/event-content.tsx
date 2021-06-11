@@ -1,10 +1,10 @@
-
+import * as S from './event-content.styles'
 
 function EventContent(props) {
     return (
-        <section>
+        <S.Content>
             {props.children}
-        </section>
+        </S.Content>
     );
 }
 

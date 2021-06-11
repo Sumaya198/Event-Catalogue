@@ -1,14 +1,18 @@
-
+import * as S from './logistics-item.styles';
 function LogisticsItem(props) {
     const { icon: Icon } = props;
 
     return (
-        <li>
-            <span>
-                <Icon />
-            </span>
-            <span>{props.children}</span>
-        </li>
+        <S.Item>
+            <li>
+                <span>
+                    <S.Icons>
+                        <Icon />
+                    </S.Icons>
+                </span>
+                <span>{props.children}</span>
+            </li>
+        </S.Item>
     );
 }
 

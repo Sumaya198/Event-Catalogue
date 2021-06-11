@@ -1,5 +1,6 @@
 import EventList from '../components/event-list/event-list.component';
-import {getFeaturedEvents} from '../data';
+import { Hero } from '../components/hero/hero.style';
+import { getFeaturedEvents } from '../data';
 
 export default function Home(): JSX.Element {
 
@@ -7,7 +8,8 @@ export default function Home(): JSX.Element {
 
   return (
     <div>
-      <EventList items={featuredEvents}/>
+      <Hero />
+      <EventList items={featuredEvents} />
     </div>
   )
 }

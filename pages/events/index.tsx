@@ -1,11 +1,20 @@
-import React from 'react'
+import { Fragment } from 'react';
 
-const index = () => {
+import { useRouter } from 'next/router';
+
+import { getAllEvents } from '../../data';
+import EventList from '../../components/event-list/event-list.component';
+
+const AllEventsPage = () => {
+    const events = getAllEvents();
+    const router = useRouter();
+
+
     return (
-        <div>
-            <h1>All Events</h1>
-        </div>
+        <Fragment>
+            <EventList items={events} />
+        </Fragment>
     )
 }
 
-export default index
+export default AllEventsPage
